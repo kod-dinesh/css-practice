@@ -1,0 +1,22 @@
+#p1{
+    /* color: #333;
+    background-color:#3498db;
+    height: 500px;
+    background-image: url(2nd.jpg);
+    background-position:center;
+    background-repeat:repeat;
+    background-size: 10%;
+    opacity:0.5; */
+
+    /* color:rgb(225,0,0,80%);/* 80% define's the opcity of the color*/
+    /* font-size:xx-large; */ 
+    color:hsl(300, 100%, 62%,90%);
+    height:1000px;
+    /* in this hsl(hue,saturation,lightness or brightness) which means hue represents color , saturation deines the intensity of a color ,lightness is also a brightness range 0% darkness or black , 50% means balanced , 100 is full bright or white , opacity is the transparency of the color*/
+    background-image:url('2nd.jpg'),url('3rd.jpg');
+    background-position:right,left;
+    background-repeat:repeat;
+    background-size:50% 40%,50% 40%;
+    background-attachment: local;
+
+}

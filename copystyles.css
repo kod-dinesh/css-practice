@@ -1,0 +1,89 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* 1. :hover */
+button:hover {
+  background-color: #3498db;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* 2. :focus */
+input:focus {
+  outline: none;
+  border: 2px solid #2980b9;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+/* 3. :nth-child() */
+li:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* 4. :nth-of-type() */
+p:nth-of-type(2) {
+  color: #27ae60;
+}
+
+/* 5. :first-child */
+.container :first-child {
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+/* 6. :last-child */
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* 7. :only-child */
+div:only-child {
+  text-align: center;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* 8. :not() */
+li:not(.highlight) {
+  color: #7f8c8d;
+}
+
+/* 9. :visited */
+a:visited {
+  color: #8e44ad;
+}
+
+/* 10. :active */
+button:active {
+  background-color: #c0392b;
+}
+
+/* Additional styling for clarity */
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

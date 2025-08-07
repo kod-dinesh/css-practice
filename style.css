@@ -1,0 +1,51 @@
+p{
+    color:violet;
+}
+
+
+/* descendent selector 
+every pre tag which comes under the div tag */ 
+div pre{  
+    color:blue;
+}
+/* 
+id selector 
+in which each element can be styled using the id attribute  */
+#pre1{
+    color:blueviolet;
+}
+
+/* class slector 
+in which element which having same class attribute value will be styled  */
+.class1{
+    color:brown;
+}
+
+/* group selector 
+we can style the mulitple element by grouping them  */
+
+h1,h2,h3{
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p + p {
+    color:aquamarine;
+}
+
+button:hover {
+  background-color: #3498db;
+  color: white;
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+input:focus {
+  outline: none; /* Remove default browser outline */
+  border: 2px solid #2980b9;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+
+li:nth-child(odd) {
+    color:blue;
+}
