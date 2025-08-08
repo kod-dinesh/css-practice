@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class Selector</title>
+
+    <style>
+        #button1:hover{
+            background-color:red;
+            color: white;
+            cursor: pointer;
+            border:none;
+        }
+
+        .pgrandchild:hover{
+            color:yellow;
+            background:black;
+        }
+
+        input[type="text"]:hover:focus{
+            background-color:black;
+            color:white;
+            border:none;
+        }
+
+        /* #anchorgrandchild2::visited:active{
+            color: purple;
+        } */
+
+        
+        #a1:visited{
+            color:orange;
+        }
+       
+        #a2:visited{
+            color:orange;
+        }
+       
+        #a3:visited{
+            color:orange;
+        }
+       
+       
+
+       
+
+        #a1{
+            color:red;
+        }
+        #a2{
+            color:blue;
+
+        }
+        #a3{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent" name="div1">
+        <p class="pchild" name="p1">Lorem ipsum dolor sit.</p>
+        <p class="pchild" name="p2">Nihil animi nulla quidem!</p>
+        <p class="pchild" name="p3">Sit, veritatis? Facere, natus.</p>
+        <p class="pchild" name="p4">Provident explicabo quis nostrum.</p>
+        <input type="text" placeholder="enter the name" />
+        <div id="child" name="div2">
+            <p class="pgrandchild" name="p5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ipsum. Labore nisi corrupti repellat beatae voluptate vitae, ex consequatur facilis tempora autem, id sunt saepe. 
+                Possimus dolorum tenetur ipsam doloremque?
+                 <a id="a1" href="#l1">Lorem.</a>
+                 <a id="a2" href="#l2">Quis!</a>
+                 <a id="a3" href="#l3">Accusantium?</a>
+                 <p class="pgrandchild" name="p6">Lorem ipsum dolor sit amet consectetur adipisicing elit. <b id="bgrandchild" name="bold1">im durga</b> Fugit corrupti molestias dicta dolorum ipsam quibusdam aperiam, mollitia libero, nesciunt eaque, natus provident excepturi reiciendis iusto fugiat quas nostrum sapiente nobis.</p>
+            <p class="pgrandchild" name="p7">Sequi, earum? Fugiat, repellendus excepturi provident placeat <i id="igrandchild" name="italic1">im dinesh</i> voluptatem laboriosam deleniti culpa illum earum reiciendis, eaque inventore vero a magni exercitationem facere molestias voluptatibus quis assumenda ipsum commodi deserunt? Quaerat, eaque.</p>
+            <p class="pgrandchild" name="p8">Nemo quaerat architecto necessitatibus at magni. Provident, delectus id voluptatum, qui architecto laborum ducimus dicta, ex maxime in quae reiciendis sequi et. Qui est obcaecati quos veniam repellat laboriosam officiis?</p>
+        </div>
+        <p class="pchild" name="p9">Lorem ipsum dolor sit amet.</p>
+        <p class="pchild" name="p10">Quam exercitationem aspernatur amet enim!</p>
+        <p class="pchild" name="p11">Quasi ipsam quia praesentium ut.</p>
+        <p class="pchild" name="p12">Odio perspiciatis ut autem maiores!</p>
+        <p class="pchild" name="p13">Illum enim eligendi ratione tempore?</p>
+        <button id="button1" type="submit">submit</button>
+    </div>
+    
+
+
+     
+</body>
+</html>

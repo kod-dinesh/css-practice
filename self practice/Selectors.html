@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelfPractice-Day1</title>
+    <style>
+        *{ 
+            /* **universal selector:** */
+            margin:0px;
+           
+        }
+
+
+        #parent,#sibling-parent{ 
+            /* ** both id and group selector:** */
+            border:3px solid red;
+            margin-bottom:10px;
+        }
+
+        #child,#child2{ 
+            /* **group + id selector:** */
+            border: 2px solid blue;
+
+        }
+
+        a[target="_blank"]{
+            /* **attribute selector:** */
+            color:red;
+        }
+
+        .pchild{ 
+            /* **class selector:** */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        #parent>p{ 
+            /* **child selector:** */
+            font-style: oblique;
+        }
+
+         #parent p{ 
+            /* **descendent selector:** */
+            font-weight: bold;
+        }
+
+        #child+p{
+            /* **adjacent sibling selector:** */
+            color:red;
+        }
+        
+        #child2~p{
+            /* **group sibling selector:** */
+            color:red;
+        }
+
+        i{
+            /* ** element or type selector:** */
+            color:aquamarine;
+        }
+        
+    </style>
+</head>
+<body >
+    <div id="parent" name="div1">
+        <p class="pchild" name="p1">Lorem ipsum dolor sit.</p>
+        <p class="pchild" name="p2">Nihil animi nulla quidem!</p>
+        <p class="pchild" name="p3">Sit, veritatis? Facere, natus.</p>
+        <p class="pchild" name="p4">Provident explicabo quis nostrum.</p>
+        <div id="child" name="div2">
+            <p class="pgrandchild" name="p5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ipsum. Labore nisi corrupti repellat beatae voluptate vitae, ex consequatur facilis tempora autem, id sunt saepe. 
+                Possimus dolorum tenetur ipsam doloremque?
+                <a id="anchorgrandchild" name="hyperlink" href="#" target="_blank" rel="noopener noreferrer">anchor</a></p>
+            <p class="pgrandchild" name="p6">Lorem ipsum dolor sit amet consectetur adipisicing elit. <b id="bgrandchild" name="bold1">im durga</b> Fugit corrupti molestias dicta dolorum ipsam quibusdam aperiam, mollitia libero, nesciunt eaque, natus provident excepturi reiciendis iusto fugiat quas nostrum sapiente nobis.</p>
+            <p class="pgrandchild" name="p7">Sequi, earum? Fugiat, repellendus excepturi provident placeat <i id="igrandchild" name="italic1">im dinesh</i> voluptatem laboriosam deleniti culpa illum earum reiciendis, eaque inventore vero a magni exercitationem facere molestias voluptatibus quis assumenda ipsum commodi deserunt? Quaerat, eaque.</p>
+            <p class="pgrandchild" name="p8">Nemo quaerat architecto necessitatibus at magni. Provident, delectus id voluptatum, qui architecto laborum ducimus dicta, ex maxime in quae reiciendis sequi et. Qui est obcaecati quos veniam repellat laboriosam officiis?</p>
+        </div>
+        <p class="pchild" name="p9">Lorem ipsum dolor sit amet.</p>
+        <p class="pchild" name="p10">Quam exercitationem aspernatur amet enim!</p>
+        <p class="pchild" name="p11">Quasi ipsam quia praesentium ut.</p>
+        <p class="pchild" name="p12">Odio perspiciatis ut autem maiores!</p>
+        <p class="pchild" name="p13">Illum enim eligendi ratione tempore?</p>
+    </div>
+    
+
+
+     <div id="sibling-parent" name="div3">
+           <p class="pchild" name="p14">Lorem ipsum dolor sit.</p>
+        <p class="pchild" name="p15">Nihil animi nulla quidem!</p>
+        <p class="pchild" name="p16">Sit, veritatis? Facere, natus.</p>
+        <p class="pchild" name="p17">Provident explicabo quis nostrum.</p>
+        <div id="child2" name="div4">
+            <p class="pgrandchild" name="p18">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ipsum. Labore nisi corrupti repellat beatae voluptate vitae, ex consequatur facilis tempora autem, id sunt saepe. 
+                Possimus dolorum tenetur ipsam doloremque?
+                <a id="anchorgrandchild" name="hyperlink" href="#" target="_blank" rel="noopener noreferrer">anchor</a></p>
+            <p class="pgrandchild" name="p19">Lorem ipsum dolor sit amet consectetur adipisicing elit. <b id="bgrandchild" name="bold2">im durga</b> Fugit corrupti molestias dicta dolorum ipsam quibusdam aperiam, mollitia libero, nesciunt eaque, natus provident excepturi reiciendis iusto fugiat quas nostrum sapiente nobis.</p>
+            <p class="pgrandchild" name="p20">Sequi, earum? Fugiat, repellendus excepturi provident placeat <i id="igrandchild" name="italic2">im dinesh</i> voluptatem laboriosam deleniti culpa illum earum reiciendis, eaque inventore vero a magni exercitationem facere molestias voluptatibus quis assumenda ipsum commodi deserunt? Quaerat, eaque.</p>
+            <p class="pgrandchild" name="p21">Nemo quaerat architecto necessitatibus at magni. Provident, delectus id voluptatum, qui architecto laborum ducimus dicta, ex maxime in quae reiciendis sequi et. Qui est obcaecati quos veniam repellat laboriosam officiis?</p>
+        </div>
+        <p class="pchild" name="p22">Lorem ipsum dolor sit amet.</p>
+        <p class="pchild" name="p23">Quam exercitationem aspernatur amet enim!</p>
+        <p class="pchild" name="p24">Quasi ipsam quia praesentium ut.</p>
+        <p class="pchild" name="p25">Odio perspiciatis ut autem maiores!</p>
+        <p class="pchild" name="p26">illum enim eligendi ratione tempore?</p>
+    </div>
+</body>
+</html>
