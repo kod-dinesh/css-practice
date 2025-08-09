@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 3rd day</title>
+    <style>
+    #parent{
+        margin: 100px 200px;
+        width: 50%;
+        height:50vh;
+        border: 2px solid black;
+        display: flex;
+        /* flex-direction:row-reverse;
+        /* justify-content:center; */
+        /* align-items:center; */
+        /* align-items:baseline; */
+        /* align-content: space-around;  */
+        gap: 1em;
+        
+        /* flex-wrap: wrap; */
+
+    }
+    .class{
+        border: none;
+        /* background-color: #B4E50D; */
+        margin:2px;
+        height:30px;
+        
+        width:45px;
+        
+        
+    }
+
+    .class1{
+        background-color: #B4E50D;
+        /* align-self:center; */
+        /* font-size:xx-large; */
+        flex-grow: 1;
+        flex-shrink: 10;
+        flex-basis: 0;
+    }
+     .class2{
+        background-color: #FB4141;
+        flex: 1 2 0;
+    }
+     .class3{
+        background-color: #B4E50D;
+        flex: 0 2 100px;
+    }
+     .class4{
+        background-color: #FF9B2F;
+    }
+     .class5{
+        background-color: #F5C9B0;
+    }
+    </style>
+</head>
+<body>
+       <div id="parent">
+        <div class="class class1">item 1</div>
+        <div class="class class2">item 2</div>
+        <div class="class class3">item 3</div>
+        <!-- <div class="class class4">item 4</div>
+        <div class="class class5">item 5</div>
+        <div class="class class2">item 2</div>
+        <div class="class class4">item 4</div>
+        <div class="class class5">item 5</div> -->
+        
+    </div>
+    </body>
+</html>
