@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+}
+
+.container{
+    margin-top: 250px;
+    border: 2px solid black;
+    display: grid;
+    justify-content: center;
+    grid-auto-rows: repeat(3,100px);
+    grid-auto-flow: row;
+    grid-auto-columns: repeat(3,100px);
+    grid-auto-flow: cloumn;
+
+}
+
+.item{
+    border: 2px solid blue;
+    grid-area: 1,1,2,2;
+}

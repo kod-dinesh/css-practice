@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClassElements</title>
+</head>
+<style>
+    p::before{
+        content:"DuplicateContent: ignore.....";
+        color:gray;
+    }
+
+    p::after{
+        content:"...taata bye bye!!!";
+        color: green;
+    }
+
+    p::first-letter{
+        font-size:20px;
+        color:red;
+    }
+
+    p::first-line{
+        color:blue;
+    }
+
+    p::selection{
+        color:black;
+        background-color:yellow;
+    }
+
+    li::marker{
+        content:"→ ";
+        color: green;
+    }
+</style>
+<body>
+    <div id="div1">
+        <ul>
+            <li class="list">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, ut.</p>
+            </li>
+            <li class="list">
+                <p>Harum illo unde architecto amet, facilis ab repellat ad! Illum.</p>
+            </li>
+            <li class="list">
+                <p>Et pariatur sequi tempora eligendi illum magni exercitationem veritatis repellat!</p>
+            </li>
+            <li class="list">
+                <p>Provident debitis delectus, placeat laboriosam nobis eaque exercitationem obcaecati possimus.</p>
+            </li>
+            <li class="list">
+                <p>Totam alias blanditiis neque aliquam! Consequatur nostrum cupiditate quam aut.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
