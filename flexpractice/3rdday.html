@@ -23,33 +23,76 @@
             margin-left: 200px;
 
         } */
-        
-        img{
+        /* absolute baiscally takes the reference as the body's postion as a main initial point or starting point i.e 0 where in relative the child reference the postion of parent if parent does not having the position then parent of parents will be reference if non of the parent having the position then default the body will be refered */
+        /* img{
             position:absolute;
             width:30%;
             height:30%;
             z-index: -1;
             top:-100px;
             left:-50px;
+            opacity:0.9;
+
             
+        } */
+     /* one more main change is the it push's the elements where as in absolute it overlaps  */
+        img{
+            position:relative;
+            width:30%;
+            heigth:30%;
+            z-index:-1;
+            top:-50px;
+            left:-50px;
+        }
+        
+        div{
+            /* margin:200px 200px; */
+        }
+
+        #div2{
+            position:fixed;
+            border:none;
+            background-color:#B9375D;
+            width:100%;
+            height:50px;
+            top:0px;
+            margin:0px 0px;
+            text-align:center;
             
         }
-   
-        
+
+        #p1{
+            position:sticky;
+            top:0;
+            z-index: -1;
+            color:black;
+
+        }
+
+        #p2{
+            position:static;
+            
+        }
+
+
     </style>
 </head>
 <body>
     <div>
-    <img src="space.png" alt="no image"/>   
+    <!-- <img src="space.png" alt="no image"/>    -->
     <div id="div1">Im softwaredeveloper
-        <div id="div2">1 Im tester</div>
+        <div id="div6">1 Im tester</div>
     </div>
     
-      <div id="div2"> 2  tester</div>
-        <div id="div2">3 Im tester</div>
-          <div id="div2">4 Im tester</div>
-            <div id="div2">5 Im tester</div>
-</body>
-    </div>
+      <div id="div2"><a href="#">Welcome</a> to our page </div>
+        <div id="div3">3 Im tester</div>
+          <div id="div4">4 Im tester</div>
+            <div id="div5">5 Im tester</div>
+
+            <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, error eum minus omnis, praesentium non iste in, deserunt odio ipsa dolores illo vel! Magnam iure aspernatur cum quidem accusamus consequuntur. Architecto fugit cum assumenda vel modi tempore similique, at ut iste maxime quas et obcaecati ipsam qui ex laboriosam pariatur eaque praesentium necessitatibus quos? Error enim optio veniam deserunt aspernatur omnis officiis debitis. Pariatur ut recusandae vero eveniet obcaecati exercitationem? Adipisci beatae repellat illo, iusto laborum cumque officia minima cum exercitationem, sit soluta, facilis eaque dolorem architecto totam sint labore tempore et aliquam explicabo aliquid molestiae ut id impedit! Ab.</p>
+            <p>Culpa cum atque iste eaque harum corrupti laudantium maiores praesentium mollitia illum iusto beatae ab, nam ut asperiores reiciendis sint quos dolores natus, minima nulla veritatis similique. Asperiores aliquam cum saepe ut facilis atque id velit earum beatae minus quia labore consequuntur amet cumque consequatur fuga vero, incidunt dignissimos recusandae exercitationem. Sunt blanditiis voluptatem laborum? Fugit nisi nesciunt cumque illo quibusdam, necessitatibus repellat libero laudantium enim eos repellendus placeat ad culpa assumenda dolore. Unde suscipit, harum impedit dolor hic assumenda earum error repellendus nisi corporis illum quisquam maxime tempore minus ullam voluptatem. Quasi obcaecati qui numquam cum facere, maiores non?</p>
+            <p>Hic dolore eligendi ratione quis in recusandae ipsam eius illo! Ea commodi assumenda, minus quasi ut sint. Optio soluta sint corrupti possimus suscipit ullam molestias, veniam, error quaerat eum distinctio. Doloremque adipisci iste perferendis esse mollitia eligendi vitae numquam ipsa natus et, consectetur nobis deserunt aspernatur voluptatem recusandae veniam quibusdam, corporis est maiores? Deserunt sapiente saepe at voluptates? Atque est saepe consectetur optio, repellat fugit enim dolorem beatae aut molestias sapiente quo ipsum eum aliquid voluptates facere soluta, labore officia nam in vel doloremque earum ullam sunt? Doloremque, quis. Delectus vero alias dolorem! Nemo harum, similique aut neque molestias beatae.</p>
+            <p id="p2">Ratione accusamus nemo expedita fugit culpa cupiditate commodi hic odio officia animi, dignissimos aperiam placeat possimus quibusdam vitae recusandae rem illum nobis illo est nam, natus consectetur? Atque quibusdam illum dolore quidem tempore consequuntur ex molestias, necessitatibus nam debitis adipisci qui eveniet similique, labore reprehenderit magnam quo ducimus ea a hic aliquid doloremque! Non amet nulla voluptatem, ducimus consequatur nihil recusandae earum repellendus nesciunt eaque beatae officia ullam neque eveniet delectus tempora eligendi voluptatibus. Eligendi in expedita necessitatibus debitis aperiam enim asperiores consectetur ad? Rem aliquam pariatur labore eveniet odit sit, repudiandae, deserunt vero aut earum ad. Quae, rerum repudiandae!</p>
+           
   
 </html>
